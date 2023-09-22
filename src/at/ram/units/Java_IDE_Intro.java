@@ -2,7 +2,7 @@ package at.ram.units;
 
 public class Java_IDE_Intro {
     public static void main(String[] args) {
-        System.out.println("hello");
+        System.out.println("hallo");
 
         byte b = 7;
         short s = 88;
