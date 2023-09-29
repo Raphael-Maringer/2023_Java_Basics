@@ -1,0 +1,49 @@
+package at.ram.units;
+
+import java.util.Scanner;
+
+import java.util.Random;
+public class Wuerfelspiel {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+        boolean IsFinished = false;
+
+        while(!IsFinished){
+            menu();
+            System.out.println("Eingabe: ");
+            int selection = scanner.nextInt();
+
+            switch (selection){
+                case 1: spielen();
+                        break;
+
+                default:
+                    System.out.println("Bitte geben Sie eine Zahl zwischen 1 und 3 ein!");
+            }
+        }
+
+
+    }
+
+    public static void menu(){
+        System.out.println("Willkommen beim Würfelspiel!");
+        System.out.println("1. Spiel starten");
+        System.out.println("2. Punktestand anzeigen");
+        System.out.println("3. Spiel beenden");
+    }
+
+    public static void spielen(){
+        int playerScore = 0;
+        int computerScore = 0;
+
+        for (int i = 0; i <= 6 ; i++) {
+            System.out.println(i + ". Runde:");
+            System.out.println("Du bist am Zug! Drücke Enter, um zu würfeln!");
+            int playerRoll = roll(random);
+        }
+
+
+    }
+}
