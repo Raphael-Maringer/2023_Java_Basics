@@ -3,11 +3,12 @@ package at.ram.units;
 import java.util.Scanner;
 
 import java.util.Random;
-public class Wuerfelspiel {
+public class DiceGame {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
+        int randomNumber = random.nextInt(1,3);
         boolean IsFinished = false;
 
         while(!IsFinished){
@@ -16,7 +17,7 @@ public class Wuerfelspiel {
             int selection = scanner.nextInt();
 
             switch (selection){
-                case 1: spielen();
+                case 1: play();
                         break;
 
                 default:
@@ -34,14 +35,15 @@ public class Wuerfelspiel {
         System.out.println("3. Spiel beenden");
     }
 
-    public static void spielen(){
+    public static void play(){
         int playerScore = 0;
         int computerScore = 0;
 
         for (int i = 0; i <= 6 ; i++) {
             System.out.println(i + ". Runde:");
             System.out.println("Du bist am Zug! Drücke Enter, um zu würfeln!");
-            int playerRoll = roll(random);
+            int playerRoll = randomNumber;
+            int computerRoll = randomNumber;
         }
 
 
