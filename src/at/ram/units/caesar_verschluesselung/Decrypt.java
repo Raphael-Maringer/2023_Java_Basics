@@ -10,7 +10,7 @@ public class Decrypt {
 
         for (int i = 0; i < text.length(); i++) {
             char actualLetter = text.charAt(i);
-            actualLetter += 1;
+            actualLetter -= 1;
             decryptedText[i] = actualLetter;
         }
 

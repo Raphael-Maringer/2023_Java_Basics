@@ -12,7 +12,7 @@ public class Main {
         System.out.println("Originaltext: " + text);
 
         String encryptedText = Encrypt.encrypt(text);
-        System.out.print("Encrypt: " + encryptedText);
+        System.out.println("Encrypt: " + encryptedText);
 
         String decryptedText = Decrypt.decrypt(encryptedText);
         System.out.println("Decrypt: " + decryptedText);
