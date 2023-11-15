@@ -18,12 +18,15 @@ public class StringHelper {
     }
 
     public static String reverseString(String word) {
-        System.out.println("Das Wort ist " + countLetters());
+        System.out.println("Das Wort ist " + countLetters(word));
+        return new StringBuilder(word).reverse().toString();
 
     }
 
     public static String printAmountOfLetters(String word) {
-        System.out.println();
+        int amountOfLetters = countLetters(word);
+        System.out.println("Das Wort hat " + amountOfLetters + " Buchstaben!");
+        return String.valueOf(amountOfLetters);
     }
 
 }

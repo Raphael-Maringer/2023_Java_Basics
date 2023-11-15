@@ -9,9 +9,13 @@ public class Main {
         String word = scanner.nextLine();
 
         if (StringHelper.isPalindrome(word)) {
-            System.out.println("Das Wort " + word + "ist ein Palindrom!");
+            System.out.println("Das Wort " + word + " ist ein Palindrom!");
         } else {
-            System.out.println("Das Wort " + word + "ist kein Palindrom!");
+            System.out.println("Das Wort " + word + " ist kein Palindrom!");
         }
+        String countLetters = StringHelper.printAmountOfLetters(word);
+
+        String reverseString = StringHelper.reverseString(word);
+
     }
 }
