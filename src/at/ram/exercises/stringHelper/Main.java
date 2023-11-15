@@ -13,9 +13,14 @@ public class Main {
         } else {
             System.out.println("Das Wort " + word + " ist kein Palindrom!");
         }
-        String countLetters = StringHelper.printAmountOfLetters(word);
+        String countLetters = StringHelper.countLetters(word);
+
+
 
         String reverseString = StringHelper.reverseString(word);
+        System.out.println("Das Wort rückwärts ist " + reverseString + "!");
+
+       StringHelper.printAmountOfLetters(word);
 
     }
 }
