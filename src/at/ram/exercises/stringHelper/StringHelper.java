@@ -18,11 +18,18 @@ public class StringHelper {
 
     }
 
-    public static String countLetters(String word) {
+    public static String countTotalLetters(String word) {
         int amountOfLetters = word.length();
         System.out.println("Das Wort hat " + amountOfLetters + " Buchstaben!");
         return String.valueOf(amountOfLetters);
     }
+
+    public static String countLetters(String word, String letter) {
+        int amountOfLetters = word.length();
+        System.out.println("Der Buchstabe " + letter + " kommt " + amountOfLetters + " mal vor!");
+        return String.valueOf(amountOfLetters);
+    }
+
 
     public static void printAmountOfLetters(String word) {
         int[] alphabet = new int[26];
