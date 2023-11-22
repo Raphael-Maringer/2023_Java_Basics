@@ -19,17 +19,20 @@ public class StringHelper {
     }
 
     public static String countTotalLetters(String word) {
-        int amountOfLetters = word.length();
-        System.out.println("Das Wort hat " + amountOfLetters + " Buchstaben!");
-        return String.valueOf(amountOfLetters);
+        int amountOfTotalLetters = word.length();
+        System.out.println("Das Wort hat " + amountOfTotalLetters + " Buchstaben!");
+        return String.valueOf(amountOfTotalLetters);
     }
 
-    public static String countLetters(String word, String letter) {
-        int amountOfLetters = word.length();
-        System.out.println("Der Buchstabe " + letter + " kommt " + amountOfLetters + " mal vor!");
-        return String.valueOf(amountOfLetters);
+public static void countLetters(String word, String letter) {
+    int count = 0;
+    for (char c : word.toCharArray()) {
+        if (c == letter.charAt(0)) {
+            count++;
+        }
     }
-
+    System.out.println("Der Buchstabe " + letter + " kommt " + count + " mal vor!");
+}
 
     public static void printAmountOfLetters(String word) {
         int[] alphabet = new int[26];
