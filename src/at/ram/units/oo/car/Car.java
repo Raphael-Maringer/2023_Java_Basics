@@ -1,6 +1,8 @@
 package at.ram.units.oo.car;
 
+
 public class Car {
+
     private int fuelConsumption;
     private int fuelAmount;
     private String brand;
@@ -9,10 +11,14 @@ public class Car {
     private int honkAmount;
     private int fuelVolume;
 
-    public Car(int fuelConsumption, String brand, String serialNumber) {
+    public Car(int fuelConsumption, int fuelAmount, String brand, String serialNumber, String color, int honkAmount, int fuelVolume) {
         this.fuelConsumption = fuelConsumption;
+        this.fuelAmount = fuelAmount;
         this.brand = brand;
         this.serialNumber = serialNumber;
+        this.color = color;
+        this.honkAmount = honkAmount;
+        this.fuelVolume = fuelVolume;
     }
 
     public void drive() {
