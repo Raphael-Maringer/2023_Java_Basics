@@ -1,8 +1,7 @@
 package at.ram.units.oo.car;
 
-
 public class Car {
-
+    private Engine engine;
     private int fuelConsumption;
     private int fuelAmount;
     private String brand;
@@ -11,7 +10,8 @@ public class Car {
     private int honkAmount;
     private int fuelVolume;
 
-    public Car(int fuelConsumption, int fuelAmount, String brand, String serialNumber, String color, int honkAmount, int fuelVolume) {
+    public Car(Engine engine, int fuelConsumption, int fuelAmount, String brand, String serialNumber, String color, int honkAmount, int fuelVolume) {
+        this.engine = engine;
         this.fuelConsumption = fuelConsumption;
         this.fuelAmount = fuelAmount;
         this.brand = brand;
@@ -23,7 +23,7 @@ public class Car {
 
     public void drive() {
         this.fuelAmount = this.fuelAmount - this.fuelConsumption;
-        System.out.println("I am driving with " + fuelAmount + " l fuel remaining");
+        System.out.println("I am driving with " + fuelAmount + "l fuel remaining");
     }
 
     public void brake() {
@@ -52,47 +52,33 @@ public class Car {
     public void setBrand(String brand) {
         this.brand = brand;
     }
-
     public void setFuelAmount(int fuelAmount) {
         this.fuelAmount = fuelAmount;
     }
-
     public void setFuelConsumption(int fuelConsumption) {
         this.fuelConsumption = fuelConsumption;
     }
-
     public void setFuelVolume(int fuelVolume) {
         this.fuelVolume = fuelVolume;
     }
-
     public void setHonkAmount(int honkAmount) {
         this.honkAmount = honkAmount;
     }
-
     public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
     }
 
-    public String getBrand() {
-        return brand;
-    }
-
+    public String getBrand() {return brand;}
     public int getFuelAmount() {
         return fuelAmount;
     }
-
     public int getFuelConsumption() {
         return fuelConsumption;
     }
-
     public int getFuelVolume() {
         return fuelVolume;
     }
-
-    public int getHonkAmount() {
-        return honkAmount;
-    }
-
+    public int getHonkAmount() {return honkAmount;}
     public String SerialNumber() {
         return serialNumber;
     }
