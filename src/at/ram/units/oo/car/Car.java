@@ -2,23 +2,22 @@ package at.ram.units.oo.car;
 
 public class Car {
     private Engine engine;
-    private int fuelConsumption;
-    private int fuelAmount;
+    private Tank tank;
     private String brand;
     private String serialNumber;
     private String color;
     private int honkAmount;
-    private int fuelVolume;
+    public Tank fuelAmount;
+    public Tank fuelConsumption;
+    public Tank tankVolume;
 
-    public Car(Engine engine, int fuelConsumption, int fuelAmount, String brand, String serialNumber, String color, int honkAmount, int fuelVolume) {
+    public Car(Engine engine, Tank tank, String brand, String serialNumber, String color, int honkAmount) {
         this.engine = engine;
-        this.fuelConsumption = fuelConsumption;
-        this.fuelAmount = fuelAmount;
+        this.tank = tank;
         this.brand = brand;
         this.serialNumber = serialNumber;
         this.color = color;
         this.honkAmount = honkAmount;
-        this.fuelVolume = fuelVolume;
     }
 
     public void drive() {
@@ -31,7 +30,7 @@ public class Car {
     }
 
     public void turboboost() {
-        double fuelPercentage = fuelAmount / (double) fuelVolume * 100.0;
+        double fuelPercentage = fuelAmount / (double) tankVolume * 100.0;
         if (fuelPercentage > 10) {
             System.out.println("SuperBoostMode");
         } else System.out.println("Not enough fuel to go to Superboost");
@@ -52,33 +51,23 @@ public class Car {
     public void setBrand(String brand) {
         this.brand = brand;
     }
-    public void setFuelAmount(int fuelAmount) {
-        this.fuelAmount = fuelAmount;
-    }
-    public void setFuelConsumption(int fuelConsumption) {
-        this.fuelConsumption = fuelConsumption;
-    }
-    public void setFuelVolume(int fuelVolume) {
-        this.fuelVolume = fuelVolume;
-    }
+
     public void setHonkAmount(int honkAmount) {
         this.honkAmount = honkAmount;
     }
+
     public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
     }
 
-    public String getBrand() {return brand;}
-    public int getFuelAmount() {
-        return fuelAmount;
+    public String getBrand() {
+        return brand;
     }
-    public int getFuelConsumption() {
-        return fuelConsumption;
+
+    public int getHonkAmount() {
+        return honkAmount;
     }
-    public int getFuelVolume() {
-        return fuelVolume;
-    }
-    public int getHonkAmount() {return honkAmount;}
+
     public String SerialNumber() {
         return serialNumber;
     }
