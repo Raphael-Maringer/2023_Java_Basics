@@ -7,17 +7,30 @@ public class Engine {
     private int horsePower;
     private TYPE type;        // Diesel oder Benzin
     private Tank tank;
+    private int speed;
 
-    public Engine(int horsePower, TYPE type){
+    public Engine(int horsePower, TYPE type, Tank tank){
         this.horsePower = horsePower;
         this.type = type;
+        this.tank = tank;
+        this.speed = 0;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    public int getSpeed() {
+        return speed;
     }
 
     public void drive() {
-        int fuelToConsume = this.tank.getFuelConsumption();
+        double multiplicator = 0.1;
+        int fuelToConsume = this.speed * this.tank.getFuelConsumption();
+        fuelToConsume *= multiplicator;
         if (this.tank.getFuelAmount() >= fuelToConsume) {
             this.tank.setFuelAmount(this.tank.getFuelAmount() - fuelToConsume);
-            System.out.println("I am driving with " + this.tank.getFuelAmount() + "l fuel remaining");
+            System.out.println("The motor is running with speed " + speed + " and " + this.tank.getFuelAmount() + "l fuel remaining");
         } else {
             System.out.println("Not enough fuel left");
         }
@@ -54,4 +67,6 @@ public class Engine {
     public void setType(TYPE type) {
         this.type = type;
     }
+
+
 }

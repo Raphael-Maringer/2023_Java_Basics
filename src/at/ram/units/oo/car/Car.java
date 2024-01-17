@@ -7,9 +7,7 @@ public class Car {
     private String serialNumber;
     private String color;
     private int honkAmount;
-    /*public Tank fuelAmount;
-    public Tank fuelConsumption;
-    public Tank tankVolume; */
+    private int speed;
 
     public Car(Engine engine, Tank tank, String brand, String serialNumber, String color, int honkAmount) {
         this.engine = engine;
@@ -30,8 +28,22 @@ public class Car {
         }
     }
 
+    public void drive(){
+        this.engine.setSpeed(this.speed);
+        this.engine.drive();
+    }
 
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
 
+    public void turboboost(){
+        this.engine.turboboost();
+    }
+
+    public void getRemainingRange(){
+        this.engine.getRemainingRange();
+    }
 
     public void setBrand(String brand) {
         this.brand = brand;
