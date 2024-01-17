@@ -11,6 +11,8 @@ public class Tank {
         this.fuelConsumption = fuelConsumption;
     }
 
+
+
     public int getFuelAmount() {
         return fuelAmount;
     }
