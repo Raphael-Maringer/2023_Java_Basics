@@ -11,18 +11,21 @@ public class Main {
         Tank t2 = new Tank(125, 125, 12);
 
         Engine e1 = new Engine(150, Engine.TYPE.GAS, t1);
-        Engine e2 = new Engine(90,Engine.TYPE.DIESEL, t2);
+        Engine e2 = new Engine(90, Engine.TYPE.DIESEL, t2);
 
         RearMirror r1 = new RearMirror(100, 0);
         RearMirror r2 = new RearMirror(90, -40);
 
-        Car c1 = new Car(e1,t1, "Audi", "A1234", "red",
-                2);
+        Tire ti1 = new Tire(12, "Rubber", true);
+        Tire ti2 = new Tire (16, "Steel", false);
+        Tire ti3 = new Tire (16, "Steel", false);
+
+
+        Car c1 = new Car(e1, t1, "Audi", "A1234", "red", 2);
         c1.addMirror(r1);
         c1.addMirror(r2);
 
-        Car c2 = new Car(e2,t2, "Mercedes", "M1234", "white",
-                3);
+        // Car c2 = new Car(e2, t2, "Mercedes", "M1234", "white", 3);
 
         c1.setSpeed(50);
         c1.drive();
