@@ -1,7 +1,11 @@
 package at.ram.units.oo.car;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Car {
     private Engine engine;
+    private List<RearMirror> mirrors;
     private Tank tank;
     private String brand;
     private String serialNumber;
@@ -16,6 +20,7 @@ public class Car {
         this.serialNumber = serialNumber;
         this.color = color;
         this.honkAmount = honkAmount;
+        this.mirrors = new ArrayList<>();
     }
 
     public void brake() {
@@ -28,7 +33,7 @@ public class Car {
         }
     }
 
-    public void drive(){
+    public void drive() {
         this.engine.setSpeed(this.speed);
         this.engine.drive();
     }
@@ -37,12 +42,26 @@ public class Car {
         this.speed = speed;
     }
 
-    public void turboboost(){
+    public void turboboost() {
         this.engine.turboboost();
     }
 
-    public void getRemainingRange(){
+    public void getRemainingRange() {
         this.engine.getRemainingRange();
+    }
+
+    public void addMirror(RearMirror rearMirror) {
+        this.mirrors.add(rearMirror);
+    }
+
+    public List<RearMirror> getMirrors() {
+        return mirrors;
+    }
+
+    public void rotate() {
+        for (RearMirror mirror : mirrors) {
+            mirror.rotate();
+        }
     }
 
     public void setBrand(String brand) {

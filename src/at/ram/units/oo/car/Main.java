@@ -13,8 +13,13 @@ public class Main {
         Engine e1 = new Engine(150, Engine.TYPE.GAS, t1);
         Engine e2 = new Engine(90,Engine.TYPE.DIESEL, t2);
 
+        RearMirror r1 = new RearMirror(100, 0);
+        RearMirror r2 = new RearMirror(90, -40);
+
         Car c1 = new Car(e1,t1, "Audi", "A1234", "red",
                 2);
+        c1.addMirror(r1);
+        c1.addMirror(r2);
 
         Car c2 = new Car(e2,t2, "Mercedes", "M1234", "white",
                 3);
@@ -25,5 +30,10 @@ public class Main {
         c1.turboboost();
         c1.honk(2);
         c1.getRemainingRange();
+        System.out.println(c1.getMirrors().get(0).getPosition());
+        c1.rotate();
+        System.out.println(c1.getMirrors().get(0).getPosition());
+
+
     }
 }
