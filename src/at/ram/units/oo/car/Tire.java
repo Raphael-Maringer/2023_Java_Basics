@@ -31,7 +31,7 @@ public class Tire {
         this.material = material;
     }
 
-    public boolean isSeason() {
+    public boolean getSeason() {
         return season;
     }
 

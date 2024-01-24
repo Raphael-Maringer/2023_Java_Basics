@@ -10,10 +10,8 @@ public class RearMirror {
     }
 
     public void rotate() {
-        if (position != 10) {
             position += 10 ;
         }
-    }
 
     public int getSize() {
         return size;
