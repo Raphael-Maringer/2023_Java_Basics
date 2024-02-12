@@ -17,5 +17,3 @@ public class Decrypt {
         return new String(decryptedText);
     }
 }
-
-
