@@ -35,4 +35,5 @@ public class Car {
             return baseConsumption * 1.098;
         }
     }
+
 }

@@ -5,7 +5,8 @@ public class Engine {
     private TYPE type;
     private int horsepower;
 
-    public Engine(TYPE fuelType, int power) {
+    public Engine(TYPE fuelType, int horsepower) {
         this.type = type;
+        this.horsepower = horsepower;
     }
 }
