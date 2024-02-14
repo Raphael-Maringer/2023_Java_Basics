@@ -1,4 +1,4 @@
-package at.ram.units.oo.remote;
+package at.ram.units.oo.examples.remote;
 
 public class Main {
     public static void main(String[] args) {

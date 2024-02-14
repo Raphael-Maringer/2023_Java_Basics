@@ -3,7 +3,7 @@ package at.ram.units.oo.examples.cars;
 public class Main {
     public static void main(String[] args) {
         Producer producer = new Producer("Toyota", "Japan", 10);
-        Engine engine = new Engine(at.ram.units.oo.examples.cars.Engine.TYPE.DIESEL, 150);
+        Engine engine = new Engine(Engine.TYPE.DIESEL, 150);
         Car car = new Car("Blue", 200, 25000, 6.5, producer, engine);
 
         System.out.println("Car Price: " + Helper.format(car.price()) + " €");

@@ -1,10 +1,5 @@
 package at.ram.units.oo.examples.cars;
 
-import at.ram.units.oo.car.Tank;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class Car {
     private String color;
     private int maxSpeed;

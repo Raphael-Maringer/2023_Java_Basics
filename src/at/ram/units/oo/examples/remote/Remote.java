@@ -1,4 +1,4 @@
-package at.ram.units.oo.remote;
+package at.ram.units.oo.examples.remote;
 
 public class Remote {
     private Battery b1;
