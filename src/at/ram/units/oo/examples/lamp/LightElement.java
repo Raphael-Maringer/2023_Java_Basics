@@ -4,7 +4,16 @@ public class LightElement {
     public String name;
     private String color;
     private int powerConsumption;
-    private enum status {on, off}
+    private Status status;
+
+    public enum Status {on, off}
+
+    public LightElement(String name, String color, int powerConsumption, Status status) {
+        this.name = name;
+        this.color = color;
+        this.powerConsumption = powerConsumption;
+        this.status = status;
+    }
 
     public String getName() {
         return name;
@@ -30,14 +39,23 @@ public class LightElement {
         this.powerConsumption = powerConsumption;
     }
 
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
     public void turnOn() {
-        if (status = true) {
+        if (this.status == Status.on) {
             System.out.println("Mein Name ist " + name + ". Ich bin bereits eingeschaltet.");
         } else {
             System.out.println("Einschalten: " + name);
-            status = true;
-            powerConsumption += 5; }
+            this.status = status.on;
+            powerConsumption += 5;
+        }
     }
+
+
 }
-
-
