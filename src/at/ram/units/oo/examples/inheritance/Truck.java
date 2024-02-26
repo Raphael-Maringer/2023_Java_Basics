@@ -15,4 +15,16 @@ public class Truck extends Car {
     public void setTrailer(String trailer) {
         this.trailer = trailer;
     }
+
+    @Override
+    public void drive() {
+        System.out.println("I am driving the truck - consumption is high");
+        // super.drive();
+    }
+
+    @Override
+    public void brake() {
+        System.out.println("I am breaking ..... truck");
+        // super.brake();
+    }
 }

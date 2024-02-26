@@ -44,5 +44,8 @@ public class Main {
         System.out.println(c1.getTires().get(0).getSeason());
         c1.changeSeason();
         System.out.println(c1.getTires().get(0).getSeason());
+        truck1.drive();
+
+        truck1.brake();
     }
 }

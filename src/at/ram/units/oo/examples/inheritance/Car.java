@@ -26,7 +26,7 @@ public class Car {
     }
 
     public void brake() {
-        System.out.println("Ich bremse");
+        System.out.println("I am breaking ..... car");
     }
 
     public void honk(int amountOfRepetitions) {
@@ -38,6 +38,7 @@ public class Car {
     public void drive() {
         this.engine.setSpeed(this.speed);
         this.engine.drive();
+
     }
 
     public void setSpeed(int speed) {
