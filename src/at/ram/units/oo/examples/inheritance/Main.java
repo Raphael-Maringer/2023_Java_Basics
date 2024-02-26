@@ -20,6 +20,11 @@ public class Main {
         Car c1 = new Car(e1, t1, "Audi", "A1234", "red", 2);
         // Car c2 = new Car(e2, t2, "Mercedes", "M1234", "white", 3);
 
+        Truck truck1 = new Truck(e2, t2, "Volvo", "DEF321", "red", 1, "trailer1");
+
+        System.out.println(truck1.getColor() + truck1.getTrailer());
+
+
         c1.addMirror(r1);
         c1.addMirror(r2);
         c1.addTire(ti1);

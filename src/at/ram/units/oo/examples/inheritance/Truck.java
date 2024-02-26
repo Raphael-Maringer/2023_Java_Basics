@@ -4,5 +4,15 @@ public class Truck extends Car {
     private String trailer;
     public Truck(Engine engine, Tank tank, String brand, String serialNumber, String color, int honkAmount, String Trailer) {
         super(engine, tank, brand, serialNumber, color, honkAmount);
+
+        this.trailer = Trailer;
+    }
+
+    public String getTrailer() {
+        return trailer;
+    }
+
+    public void setTrailer(String trailer) {
+        this.trailer = trailer;
     }
 }

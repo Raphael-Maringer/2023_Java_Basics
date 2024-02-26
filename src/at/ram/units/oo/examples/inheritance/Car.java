@@ -76,6 +76,18 @@ public class Car {
         }
     }
 
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public void setEngine(Engine engine) {
+        this.engine = engine;
+    }
+
+    public void setMirrors(List<RearMirror> mirrors) {
+        this.mirrors = mirrors;
+    }
+
     public List<Tire> getTires() {
         return tires;
     }
@@ -84,35 +96,47 @@ public class Car {
         this.tires = tires;
     }
 
-    public void setBrand(String brand) {
-        this.brand = brand;
+    public Tank getTank() {
+        return tank;
     }
 
-    public void setHonkAmount(int honkAmount) {
-        this.honkAmount = honkAmount;
-    }
-
-    public void setSerialNumber(String serialNumber) {
-        this.serialNumber = serialNumber;
+    public void setTank(Tank tank) {
+        this.tank = tank;
     }
 
     public String getBrand() {
         return brand;
     }
 
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getSerialNumber() {
+        return serialNumber;
+    }
+
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
     public int getHonkAmount() {
         return honkAmount;
     }
 
-    public String SerialNumber() {
-        return serialNumber;
+    public void setHonkAmount(int honkAmount) {
+        this.honkAmount = honkAmount;
     }
 
-    public Tank getTank() {
-        return tank;
-    }
-
-    public Engine getEngine() {
-        return engine;
+    public int getSpeed() {
+        return speed;
     }
 }
