@@ -2,7 +2,7 @@ package at.ram.units.oo.examples.calculator;
 
 import java.util.Scanner;
 
-public class BaseCalculator {
+public class Main {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
