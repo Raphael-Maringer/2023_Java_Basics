@@ -1,4 +1,4 @@
-package at.ram.units;
+package at.ram.exercises;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package at.ram.units;
+package at.ram.exercises;
 
 public class Java_IDE_Intro {
     public static void main(String[] args) {

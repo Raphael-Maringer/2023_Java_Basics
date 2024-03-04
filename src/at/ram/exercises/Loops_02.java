@@ -1,4 +1,4 @@
-package at.ram.units;
+package at.ram.exercises;
 
 public class Loops_02 {
     public static void main(String[] args) {

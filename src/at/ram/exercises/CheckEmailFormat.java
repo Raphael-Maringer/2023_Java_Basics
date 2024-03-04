@@ -1,4 +1,4 @@
-package at.ram.exercises.stringHelper;
+package at.ram.exercises;
 
 public class CheckEmailFormat {
     public static void main(String[] args) {
