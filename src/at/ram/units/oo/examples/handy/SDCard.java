@@ -3,7 +3,7 @@ package at.ram.units.oo.examples.handy;
 import java.util.ArrayList;
 
 public class SDCard {
-    private int capacity;
+    private double capacity;
     private ArrayList<PhoneFile> files;
 
     public SDCard(int capacity) {
@@ -21,8 +21,8 @@ public class SDCard {
         }
     }
 
-    public int getFreeSpace() {
-        int usage = 0;
+    public double getFreeSpace() {
+        double usage = 0;
         for (PhoneFile file : files) {
             usage += file.getSizeInMB();
         }
