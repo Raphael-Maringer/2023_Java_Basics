@@ -15,10 +15,8 @@ public class SDCard {
         files.add(file);
     }
 
-    public void getAllFiles() {
-        for (PhoneFile file : files) {
-            System.out.println(file.getInfo());
-        }
+    public ArrayList<PhoneFile> getAllFiles() {
+        return this.files;
     }
 
     public double getFreeSpace() {
