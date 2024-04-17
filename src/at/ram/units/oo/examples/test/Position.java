@@ -1,6 +1,6 @@
 package at.ram.units.oo.examples.test;
 
-public class Position {
+public class Position { /*
     private int longitude;
     private int latitude;
 
@@ -24,5 +24,5 @@ public class Position {
     public void setLongitude(int longitude) {
         this.longitude = longitude;
     }
-
+*/
 }

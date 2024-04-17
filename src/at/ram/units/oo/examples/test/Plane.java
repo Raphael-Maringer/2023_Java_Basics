@@ -2,7 +2,7 @@ package at.ram.units.oo.examples.test;
 
 import java.util.ArrayList;
 
-public class Plane {
+public class Plane { /*
     private String name;
 
     public Plane(String name) {
@@ -21,16 +21,13 @@ public class Plane {
 
  /*   public void getPosition() {
         System.out.println("Meine Position ist: " + Position.getLongitude() + " longitude und " + Position.getLatitude() + " Latitude");
-    } */
+    }
 
 
 
     public void informPassengers(String message) {
-        String messages = TrafficController.getMessage();
-        for (Plane plane : planes) {
-            System.out.println(plane.getName());
-        }
+
     }
 
-
+*/
 }

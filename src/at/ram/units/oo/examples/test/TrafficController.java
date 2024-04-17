@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class TrafficController {
+public class TrafficController { /*
 
     private ArrayList<Plane> planes;
     //static Scanner scanner = new Scanner(System.in);
@@ -34,7 +34,7 @@ public class TrafficController {
     }
 
 
-    /* public String makeMessage() {
+     public String makeMessage() {
         System.out.println("Wie lautet die Nachricht?");
         String message = scanner.nextLine();
         System.out.println(message);
@@ -46,7 +46,7 @@ public class TrafficController {
         for (Plane plane : planes) {
             makeMessage();
         }
-    } */
+    }
 
     public ArrayList<Plane> getPlanes() {
         return planes;
@@ -57,10 +57,10 @@ public class TrafficController {
     }
 
     public static String getMessage() {
-        return message;
+        return "";
     }
 
     public void setMessage(String message) {
         this.message = message;
-    }
+    } */
 }

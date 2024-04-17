@@ -1,6 +1,6 @@
 package at.ram.units.oo.examples.test;
 
-public class Main {
+public class Main { /*
     public static void main(String[] args) {
         Passenger p1 = new Passenger("Simon", "Metzler");
         Plane pl1 = new Plane("A333");
@@ -13,5 +13,5 @@ public class Main {
 
 
 
-    }
+    } */
 }

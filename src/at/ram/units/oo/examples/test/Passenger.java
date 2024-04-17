@@ -2,7 +2,7 @@ package at.ram.units.oo.examples.test;
 
 import at.ram.units.oo.examples.handy.PhoneFile;
 
-public class Passenger {
+public class Passenger { /*
     private String firstName;
     private String lastName;
 
@@ -12,7 +12,7 @@ public class Passenger {
     }
 
     public void inform() {
-        System.out.println("Die Nachricht lautet " + Plane.informPassengers);
+      //  System.out.println("Die Nachricht lautet " + Plane.informPassengers);
     }
 
     public String getFirstName() {
@@ -29,5 +29,5 @@ public class Passenger {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
+    } */
 }

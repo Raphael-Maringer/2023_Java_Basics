@@ -18,6 +18,6 @@ public class Passenger {
     }
 
     public void inform(String message) {
-        System.out.println("My name is " + firstName + " " + lastName + "the message is: " + message);
+        System.out.println("My name is " + firstName + " " + lastName + " and the message is: '" + message +"'");
     }
 }

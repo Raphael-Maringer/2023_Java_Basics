@@ -4,11 +4,15 @@ import java.util.ArrayList;
 
 public class Plane {
     private String name;
-    private ArrayList<Passenger> passengers;
+    private Position position;
+    private ArrayList<Passenger> passengers = new ArrayList<>();
 
-    public Plane(String name) {
+
+    public Plane(String name, Position position) {
         this.name = name;
+        this.position = position;
     }
+
 
     public String getName() {
         return name;
@@ -26,5 +30,9 @@ public class Plane {
         for (Passenger passenger : this.passengers) {
             passenger.inform(message);
         }
+    }
+
+    public void printPosition(){
+        position.tellPosition();
     }
 }
