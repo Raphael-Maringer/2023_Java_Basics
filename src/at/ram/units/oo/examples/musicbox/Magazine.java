@@ -9,16 +9,31 @@ public class Magazine {
         records = new ArrayList<Record>();
     }
 
+    public void addRecord(Record record) {
+        if (records.size() < 10) {
+            records.add(record);
+        } else {
+            System.out.println("No space remaining!");
+        }
+    }
+
     public void removeRecord(Record record) {
         records.remove(record);
     }
 
-    public void getSumOfMusic() {
+    public int getSumOfMusic() {
+        int sum = 0;
         for (Record record : records) {
-            record.getSum();
+            sum += record.getSum();
         }
+
+        return sum;
     }
 
-    public void searchRecord() {
+    public void searchRecord(String title) {
+    }
+
+    public ArrayList<Record> getRecords() {
+        return records;
     }
 }
