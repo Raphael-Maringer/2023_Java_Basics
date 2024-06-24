@@ -4,6 +4,7 @@ public class Title {
     private int duration;
     private String title;
     private String artist;
+    private int Id;
 
     public Title(String title, String artist, int duration) {
         this.title = title;
@@ -21,5 +22,9 @@ public class Title {
 
     public String getArtist() {
         return artist;
+    }
+
+    public int getId() {
+        return Id;
     }
 }

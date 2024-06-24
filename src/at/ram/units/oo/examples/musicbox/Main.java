@@ -11,23 +11,24 @@ public class Main {
         Title t5 = new Title("Title 5", "Artist 5", 200);
         Title t6 = new Title("Title 6", "Artist 6", 220);
 
-        Record record1 = new Record();
-        record1.addTitle(t1);
-        record1.addTitle(t2);
-        record1.addTitle(t3);
+        Record r1 = new Record(t1, 1);
+        r1.addTitle(t2);
+        r1.addTitle(t3);
 
-        Record record2 = new Record();
-        record1.addTitle(t4);
-        record1.addTitle(t5);
-        record1.addTitle(t6);
+        Record r2 = new Record(t4, 2);
+        r2.addTitle(t5);
+        r2.addTitle(t6);
 
         Magazine magazine = new Magazine();
-        magazine.addRecord(record1);
+        magazine.addRecord(r1);
 
         Musicbox musicbox = new Musicbox(magazine);
-        musicbox.loadRecord(record1);
+        musicbox.loadRecord(r1);
 
         System.out.println(magazine.getSumOfMusic());
 
+        // magazine.searchRecord();
+
+        musicbox.selectMethod();
     }
 }

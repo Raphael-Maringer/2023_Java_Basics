@@ -4,13 +4,14 @@ import java.util.ArrayList;
 
 public class Record {
     private ArrayList<Title> titles;
-    private String recordTitle;
+    private String recordName;
     private int id;
 
-    public Record() {
+    public Record(Title title, int id) {
         this.titles = new ArrayList<Title>();
-        this.recordTitle = recordTitle;
-        this.id = id;
+        this.recordName = title.getTitle();
+        titles.add(title);
+        this.id = title.getId();
     }
 
     public void addTitle(Title title) {
@@ -21,7 +22,7 @@ public class Record {
         int sumOfTitle = 0;
         for (Title title : titles) {
             sumOfTitle += title.getDuration();
-            System.out.println("Total duration: " + title.getDuration() + "s");
+            // System.out.println("Duration: " + title.getDuration() + "s");
         }
         return sumOfTitle;
     }
@@ -30,11 +31,15 @@ public class Record {
         return titles;
     }
 
-    public String getRecordTitle() {
-        return recordTitle;
+    public String getRecordName() {
+        return recordName;
     }
 
     public int getId() {
         return id;
+    }
+
+    public String getArtistName() {
+        return titles.get(0).getArtist();
     }
 }
